@@ -5,9 +5,9 @@
     <classes>
       <class name="com.amazonaws.tests.AwsCalculatorTests">
         <methods>
+          <include name="defualtMonthlyBillTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="addedEc2DefaultValuesTest"/>
         </methods>
       </class> <!-- com.amazonaws.tests.AwsCalculatorTests -->
     </classes>

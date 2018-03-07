@@ -42,13 +42,13 @@ public class AwsCalculatorPage {
 	
 	public double getMonthlyBillAmount() {
 		
-     return Double.parseDouble(estMonthlyBillLink.getText().split("$ ")[1].replace( ")",""));
+    // return Double.parseDouble(estMonthlyBillLink.getText().split("$ ")[1].replace(")",""));
 	
 	// LONGER WAY TO DO IT :  
-//	 String billText = estMonthlyBillLink.getText();
-//	 String[] arrBill = billText.split("$ ");
-//	 String bill = arrBill[1].replace( ")" , "" );
-//	 return Double.parseDouble(bill);
+	 String billText = estMonthlyBillLink.getText();
+	 String[] arrBill = billText.split("\\$ ");
+	 String bill = arrBill[1].replace( ")" , "" );
+	 return Double.parseDouble(bill);
  	
 	}
 	

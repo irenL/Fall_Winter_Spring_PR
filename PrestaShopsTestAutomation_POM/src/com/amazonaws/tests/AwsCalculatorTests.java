@@ -12,13 +12,13 @@ public class AwsCalculatorTests extends TestBaseClass{
 
 	AwsCalculatorPage awsPage = new AwsCalculatorPage();
 	
-	@Test(priority=0, description="Monthly bill should be $ 0.00 by default",  enabled=false)
+	@Test(priority=0, description="Monthly bill should be $ 0.00 by default",  enabled=true)
 	public void defualtMonthlyBillTest() throws InterruptedException {
 		
 		assertTrue(awsPage.isAt());
 		
 		Thread.sleep(1500);
-	//	assertEquals(0.0 , awsCalculatorPage.getMonthlyBillAmount(), "Result not equals ");
+		assertEquals(0.0 , awsPage.getMonthlyBillAmount(), "Result not equals ");
 		
 		
 		
